@@ -28,6 +28,8 @@ contract Twitter {
         _;
     }
 
+/// only owner can change
+
     function changeTweetLength(uint16 newTweetLength) public onlyOwner {
         MAX_TWEET_LENGTH = newTweetLength;
     }
